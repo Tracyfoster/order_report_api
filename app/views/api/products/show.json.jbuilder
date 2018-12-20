@@ -1,1 +1,1 @@
-json.product @product
+json.(@product, :id, :item_type, :unit_cost, :unit_price)

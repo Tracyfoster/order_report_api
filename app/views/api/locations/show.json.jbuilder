@@ -1,1 +1,1 @@
-json.location @location
+json.(@location, :id, :region, :country)
