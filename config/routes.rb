@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  get  'summary/index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
     resources :reports, :only => [:index, :show]
   end
+
+  resources :summary, :only => [:index], defaults: { format: :json }
 end
