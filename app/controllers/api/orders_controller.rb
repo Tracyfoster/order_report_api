@@ -5,7 +5,7 @@ class Api::OrdersController < ApplicationController
   end
 
   def show
-    @order = Order.find(order_number: params[:order_number])
+    @order = Order.find_by(order_number: params[:order_number])
   end
 
   def self.create_order(row, location, product)
